@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/oren"
+    android:padding="30dp"
+    tools:context=".latihanfragmant2.LoginFragment2">
+
+    <TextView
+        android:id="@+id/tvlogin2"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textSize="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Username"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Password"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnlogin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/tvlupapassword2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnlogin2"
+            android:text="Lupa password"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvRegsiter2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnlogin2"
+            android:layout_marginLeft="158dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/tvlupapassword2"
+            android:text="Register"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/btnChat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_baseline_chat_24" />
+
+        <ImageButton
+            android:id="@+id/btnHelp2"
+            android:src="@drawable/ic_baseline_help_24"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment2">
+
+    <fragment
+        android:id="@+id/fragmentSatu"
+        android:name="com.example.navigationactivity.FragmentSatu"
+        android:label="fragment_satu"
+        tools:layout="@layout/fragment_satu" >
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentDua"
+            app:destination="@id/fragmentDua" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDua"
+        android:name="com.example.navigationactivity.FragmentDua"
+        android:label="fragment_dua"
+        tools:layout="@layout/fragment_dua" >
+        <action
+            android:id="@+id/action_fragmentDua_to_fragmentTiga"
+            app:destination="@id/fragmentTiga" />
+        <action
+            android:id="@+id/action_fragmentDua_to_fragmentSatu"
+            app:destination="@id/fragmentSatu" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTiga"
+        android:name="com.example.navigationactivity.FragmentTiga"
+        android:label="fragment_tiga"
+        tools:layout="@layout/fragment_tiga" >
+        <action
+            android:id="@+id/action_fragmentTiga_to_fragmentSatu"
+            app:destination="@id/fragmentSatu" />
+        <action
+            android:id="@+id/action_fragmentTiga_to_fragmentDua"
+            app:destination="@id/fragmentDua" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.navigationactivity.latihanfragmant.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.example.navigationactivity.latihanfragmant.FragmentLogin"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentRegister"
+            app:destination="@id/fragmentRegister" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_lupaPasswordFragment"
+            app:destination="@id/lupaPasswordFragment" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentHelp"
+            app:destination="@id/fragmentHelp" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.navigationactivity.latihanfragmant.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/lupaPasswordFragment"
+        android:name="com.example.navigationactivity.latihanfragmant.LupaPasswordFragment"
+        android:label="fragment_lupa_password"
+        tools:layout="@layout/fragment_lupa_password" />
+    <fragment
+        android:id="@+id/fragmentHelp"
+        android:name="com.example.navigationactivity.latihanfragmant.FragmentHelp"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/fragmentRegister"
+        android:name="com.example.navigationactivity.latihanfragmant.FragmentRegister"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.example.navigationactivity.latihanfragmant2.LoginFragment2"
+        android:label="fragment_login2"
+        tools:layout="@layout/fragment_login2" >
+        <action
+            android:id="@+id/action_loginFragment2_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+        <action
+            android:id="@+id/action_loginFragment2_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/hasilFragment2"
+        android:name="com.example.navigationactivity.latihanfragmant2.HasilFragment2"
+        android:label="fragment_hasil2"
+        tools:layout="@layout/fragment_hasil2" />
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.navigationactivity.latihanfragmant2.HomeFragment2"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" >
+        <action
+            android:id="@+id/action_homeFragment2_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+        <action
+            android:id="@+id/action_homeFragment2_to_hasilFragment2"
+            app:destination="@id/hasilFragment2" />
+        <argument
+            android:name="dataumur"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.navigationactivity.latihanfragmant2.ProfileFragment2"
+        android:label="fragment_profile2"
+        tools:layout="@layout/fragment_profile2" >
+        <action
+            android:id="@+id/action_profileFragment2_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment2"
+        android:name="com.example.navigationactivity.latihanfragmant2.RegisterFragment2"
+        android:label="fragment_register2"
+        tools:layout="@layout/fragment_register2" >
+        <action
+            android:id="@+id/action_registerFragment2_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+    </fragment>
+</navigation>

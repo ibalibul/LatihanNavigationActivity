@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/oren"
+    tools:context=".latihanfragmant2.HomeFragment2">
+
+    <TextView
+        android:id="@+id/tvlogin2"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Home"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/tvProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-30dp"
+        android:layout_toRightOf="@+id/tvlogin2"
+        android:padding="15dp"
+        android:src="@drawable/ic_baseline_account_circle_24" />
+
+    <TextView
+        android:id="@+id/tvhello"
+        android:text="Hello, Iqbal "
+        android:textSize="30dp"
+        android:padding="20dp"
+        android:layout_below="@+id/tvlogin2"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvUmur"
+        android:text="Input Tahun lahir"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/tvhello"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edInputumur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUmur"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnHitung2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edInputumur"
+        android:layout_centerHorizontal="true"
+        android:text="Hitung" />
+</RelativeLayout>
